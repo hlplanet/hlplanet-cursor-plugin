@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hlplanet": {
+      "command": "npx",
+      "args": ["-y", "hlplanet-mcp"]
+    }
+  }
+}

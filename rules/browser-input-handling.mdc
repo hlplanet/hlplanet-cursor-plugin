@@ -1,0 +1,15 @@
+---
+description: Gotchas when reading keyboard or gamepad input in browser code (KeyboardEvent, Gamepad API). Apply when writing input handling for web games, keyboard testers or controller testers.
+alwaysApply: false
+---
+
+# Browser input handling
+
+- Track keys by `event.code` (physical position), not `event.key`. Skip `event.repeat` when counting presses.
+- Release every held key on `blur` and `visibilitychange`, and on Meta `keyup` (macOS drops other `keyup` events while Cmd is held).
+- Fn never reaches the browser, and PrintScreen on Windows usually arrives as `keyup` only.
+- Poll `navigator.getGamepads()` every animation frame. Don't keep `Gamepad` objects between frames, because Chromium returns new snapshots.
+- Controllers stay hidden until a button is pressed, and the API needs HTTPS or localhost.
+- Check `mapping === 'standard'` before trusting button and axis indexes. Read triggers from `buttons[6].value` and `buttons[7].value`.
+- Don't claim to measure polling rate, latency or key actuation depth from browser events.
+- For details, use the `browser-gamepad-input` and `browser-keyboard-testing` skills.

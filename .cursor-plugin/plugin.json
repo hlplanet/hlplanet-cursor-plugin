@@ -1,0 +1,38 @@
+{
+  "name": "hlplanet",
+  "displayName": "HLPlanet Keyboards & Controllers",
+  "version": "1.0.0",
+  "description": "Keyboard size and desk-fit answers from measured data, plus skills for building browser keyboard and gamepad testers: Gamepad API, stick drift, rollover, chatter, rapid trigger and SOCD.",
+  "author": {
+    "name": "HLPlanet"
+  },
+  "publisher": "HLPlanet",
+  "homepage": "https://www.hlplanet.com/",
+  "repository": "https://github.com/hlplanet/hlplanet-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "keyboard",
+    "keyboard-size",
+    "mechanical-keyboard",
+    "hall-effect",
+    "rapid-trigger",
+    "socd",
+    "gamepad",
+    "gamepad-api",
+    "controller",
+    "stick-drift",
+    "mcp"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "keyboards",
+    "controllers",
+    "gamepad-api",
+    "input",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "mcpServers": "./mcp.json"
+}
