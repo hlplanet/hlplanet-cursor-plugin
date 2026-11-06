@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "hlplanet": {
+      "url": "https://api.hlplanet.com/mcp"
+    }
+  }
+}

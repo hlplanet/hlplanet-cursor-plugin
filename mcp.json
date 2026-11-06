@@ -1,8 +1,9 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
     "hlplanet": {
-      "command": "npx",
-      "args": ["-y", "hlplanet-mcp"]
+      "type": "streamable-http",
+      "url": "https://api.hlplanet.com/mcp"
     }
   }
 }
