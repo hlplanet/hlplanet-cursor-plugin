@@ -61,6 +61,7 @@ Claude Code: `claude mcp add --transport http hlplanet https://api.hlplanet.com/
 - **Local access:** none. The package runs no commands, reads no files outside itself and starts no background processes.
 - **Data:** the server keeps no logs of tool arguments and collects no telemetry.
 - **Approvals:** the package marks the server `untrusted` for Hermes. Every tool is annotated read-only, so calls run without prompts.
+- **Privacy policy:** [api.hlplanet.com/privacy](https://api.hlplanet.com/privacy)
 
 ## Try it
 
