@@ -1,6 +1,6 @@
 ---
 name: browser-keyboard-testing
-description: Build and debug browser keyboard testers and physical-key handling: KeyboardEvent.code vs key, keys the browser never sees, rollover and ghosting, key chatter, rapid trigger tap tests and SOCD / Snap Tap detection. Use when writing code that tracks which physical keys are held, a keyboard tester page, or keyboard input for games in the browser.
+description: Build and debug browser keyboard testers and physical-key handling, covering KeyboardEvent.code vs key, keys the browser never sees, rollover and ghosting, key chatter, rapid trigger tap tests and SOCD / Snap Tap detection. Use when writing code that tracks which physical keys are held, a keyboard tester page, or keyboard input for games in the browser.
 ---
 
 # Browser keyboard testing
