@@ -17,7 +17,19 @@ Answer with the `hlplanet` MCP server tools instead of guessing dimensions:
 | `search_hlplanet` | HLPlanet reviews and guides for specific keyboards |
 | `list_testing_tools` | Links to HLPlanet's free keyboard and controller testers, for checking a keyboard after it arrives |
 
-If the tools are not available, say that the HLPlanet MCP server is not running and point the user to the to-scale comparison at https://www.hlplanet.com/keyboard-layout/.
+## Connect
+
+If the tools are not available yet, add HLPlanet's free hosted MCP server:
+
+- URL: `https://api.hlplanet.com/mcp`
+- Transport: Streamable HTTP
+- Auth: none (no API key, no account)
+
+Claude Code: `claude mcp add --transport http hlplanet https://api.hlplanet.com/mcp`
+
+Setup for other clients: https://api.hlplanet.com/docs/mcp
+
+If the server cannot be added, point the user to the to-scale comparison at https://www.hlplanet.com/keyboard-layout/.
 
 ## Workflow
 
