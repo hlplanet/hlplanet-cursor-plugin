@@ -6,7 +6,7 @@
 
 <p align="center">
   Keyboard size and desk-fit answers from measured data, plus skills for building browser keyboard and gamepad testers.<br>
-  An agent plugin for Hermes Agent, Cursor and other Agent Plugins clients, by <a href="https://www.hlplanet.com/">HLPlanet</a>, the site that tests Hall effect and TMR keyboards and controllers.
+  An agent plugin for Kiro, Hermes Agent, Cursor and other Agent Plugins clients, by <a href="https://www.hlplanet.com/">HLPlanet</a>, the site that tests Hall effect and TMR keyboards and controllers.
 </p>
 
 ## What's inside
@@ -40,6 +40,16 @@ hermes plugins enable hlplanet
 
 This is a portable Agent Plugins v1 package (`plugin.json` + `mcp.json` + `skills/`), configuration only. The skills load as `hlplanet:keyboard-size-advisor`, `hlplanet:browser-gamepad-input` and `hlplanet:browser-keyboard-testing`.
 
+### Kiro
+
+This repository is a Kiro power. In Kiro, open **Powers**, choose **Add Custom Power** → **Import power from GitHub** and enter:
+
+```text
+https://github.com/hlplanet/hlplanet-cursor-plugin
+```
+
+Kiro activates the power when you mention keyboard sizes, gamepads, stick drift, rapid trigger or SOCD. The MCP server needs no sign-in.
+
 ### Cursor
 
 **From the marketplace:** open **Customize** in Cursor, search for "HLPlanet" and select **Install**.
@@ -52,7 +62,7 @@ git clone https://github.com/hlplanet/hlplanet-cursor-plugin ~/.cursor/plugins/l
 
 ### Just the MCP server
 
-Claude Code: `claude mcp add --transport http hlplanet https://api.hlplanet.com/mcp`. Other clients: add `{"mcpServers": {"hlplanet": {"url": "https://api.hlplanet.com/mcp"}}}`. To run it locally instead, use `npx -y hlplanet-mcp` ([hlplanet-mcp](https://github.com/hlplanet/hlplanet-mcp)).
+Claude: add [HLPlanet Keyboard Sizes](https://claude.ai/directory/hlplanet-keyboard-sizes) from the Claude directory. Claude Code: `claude mcp add --transport http hlplanet https://api.hlplanet.com/mcp`. Other clients: add `{"mcpServers": {"hlplanet": {"url": "https://api.hlplanet.com/mcp"}}}`. To run it locally instead, use `npx -y hlplanet-mcp` ([hlplanet-mcp](https://github.com/hlplanet/hlplanet-mcp)).
 
 ## What it connects to
 
@@ -62,6 +72,7 @@ Claude Code: `claude mcp add --transport http hlplanet https://api.hlplanet.com/
 - **Data:** the server keeps no logs of tool arguments and collects no telemetry.
 - **Approvals:** the package marks the server `untrusted` for Hermes. Every tool is annotated read-only, so calls run without prompts.
 - **Privacy policy:** [api.hlplanet.com/privacy](https://api.hlplanet.com/privacy)
+- **Support:** [pr@hlplanet.com](mailto:pr@hlplanet.com) or [open an issue](https://github.com/hlplanet/hlplanet-cursor-plugin/issues)
 
 ## Try it
 
