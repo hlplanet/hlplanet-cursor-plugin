@@ -5,6 +5,7 @@
   "description": "Keyboard size and desk-fit answers from measured data through HLPlanet's hosted MCP server, plus skills for building browser keyboard and gamepad testers: Gamepad API, stick drift, rollover, chatter, rapid trigger and SOCD.",
   "author": {
     "name": "HLPlanet",
+    "email": "pr@hlplanet.com",
     "url": "https://www.hlplanet.com/"
   },
   "homepage": "https://www.hlplanet.com/keyboard-layout/",
